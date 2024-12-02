@@ -1,24 +1,42 @@
-for ( i = 1; i<=100; i++)
+//Part 1: Fizz Buzz
+
+for ( let i = 1; i <= 100; i++)
 {
     console.log(i);
-
-if ( i % 3 == 0){
-    console.log("Fizz");
-} else if (i % 5 == 0){
-    console.log("Buzz");
-} else if ( i % 3 == 0 && i % 5 == 0) {
-    console.log("Fizz Buzz");
-} else {
-    console.log(i);
 }
 
-}
+	for ( let j=0; j <= 100 ; j++)
+		{
+			if ( j % 3 === 0 && j % 5 === 0)
+				{
+				console.log (j + " :Fizz Buzz")
+				}
+			else if (j % 3 === 0) 
+				{
+				console.log(j + " :Fizz");
+				}
+			else if(j % 5 === 0)
+				{
+				console.log(j + " :Buzz");
+				}
+            else
+                {
+                    console.log ( j + " :A number is not divisible by either 3 or 5 ");
+                }
+		}
 
-let n=10;
+// // Part 2: Prime Time
 
-for ( let i = n; i <= n; n++)
+for ( let k = 1; k <= 100; k++)
     {
-        if ( (n % 1 === 0 || n % 5 === 0 ) && (n % 2 === 0 || n % 3 === 0))
-        console.log("PrimeNo:" + n) ;
+        if ( k % 2 === 0 || k % 3 === 0 || k % 5 === 0 || k % 7 === 0 || k % 9 === 0 )
+        {
+            console.log( k + " : Not Prime no" ) ;
+        }
+        else
+        {
+            console.log( k + " : prime no" )
+        }
+
     }
 
